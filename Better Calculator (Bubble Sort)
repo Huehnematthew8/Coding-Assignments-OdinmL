@@ -1,0 +1,21 @@
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+num3 = float(input("Enter third number: "))
+num4 = float(input("Enter fourth number: "))
+num5 = float(input("Enter fifth number: "))
+
+def bubble_sort(nums):
+
+    swapped = True
+    while swapped:
+        swapped = False
+        for i in range(len(nums)-1):
+            if nums[i] > nums[i+1]:
+
+                nums[i], nums[i+1] = nums[i+1], nums[i]
+
+                swapped = True
+
+random_list_of_nums = [num1,num2,num3,num4,num5]
+bubble_sort(random_list_of_nums)
+print(random_list_of_nums)
